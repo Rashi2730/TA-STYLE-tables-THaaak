@@ -1,0 +1,481 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* General */
+
+
+*,
+*::before , 
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+    
+/* Color */
+
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #E3573D ;
+}
+
+
+
+/* padding */
+
+
+.padding {
+    padding: 60px 0;
+}
+.sidepadding {
+    padding: 0 250px ;
+}
+
+
+
+/* Buttons */
+
+
+.menu-btn {
+    display: flex;
+    font-size: 10px;
+    font-weight: 800;
+    justify-content: space-around;
+    color: #b8bbc0d5;
+    padding: 8px;
+    background-color: var(--secondary-color);
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.member-btn {
+    display: inline-block;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.class-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+
+/* Headings */
+
+
+h1 {
+    font-size: 45px;
+    font-weight: 800;
+    padding: 20px 0;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+h4 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+h4 span{
+    color: var(--secondary-color);
+}
+h2 span {
+    color: var(--secondary-color);
+}
+.schedule h2{
+    color: var(--primary-color);
+}
+
+
+/*  Hover     */
+
+
+.menu a:hover, .menu a.active, .sidebar li a:hover, .sidebar li a.active, .days span:hover, .days span.active, .trainer i:hover{
+    color: var(--secondary-color);
+}
+
+
+
+
+.center {
+    text-align: center;
+}
+
+
+
+
+/* Video Section */
+
+
+header {
+    overflow: hidden;
+    height: 100vh;
+    text-transform: uppercase;
+}
+.video-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+}
+.color-overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(57, 56, 82, 0.54), rgba(57, 56, 82, 0.54));
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Header-menu Part */
+
+
+
+.menubar {
+    background: rgba(153, 146, 146, 0.541);
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 100%;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--primary-color);
+
+}
+.logo a{
+    color: var(--secondary-color);
+}
+.menu a{
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 800;
+    color: #b8bbc0;
+    padding: 0 10px;
+}
+
+/* Banner-Text */
+
+
+
+.banner-text {
+    position: absolute;
+    top: 40%;
+    left:30%;
+    color: var(--primary-color);
+}
+.banner-text p{
+    font-size: 14px;
+    font-weight: 800;
+}
+h1 span {
+    color: var(--secondary-color);
+    font-size: 47px;
+}
+
+
+
+/* About Section */
+
+
+/* About header part*/
+
+
+
+.heading img {
+    padding: 20px 0;
+}
+.heading p{
+    font-weight: 600;
+    color: rgb(194, 189, 189);
+}
+
+/*  About Programs Section */
+
+
+.programs {
+    padding: 20px 0;
+}
+.programs img{
+    width: 20%;
+}
+.pcontent p{
+    font-size: 10px;
+    color: rgb(194, 189, 189);
+    font-weight: 600;
+    padding: 5px 0;
+}
+.pcontent a{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.pcontent span {
+    text-transform: capitalize;
+    color: #AAD0FF;
+    font-weight: 800;
+}
+
+
+
+/* Call-to-Action Section */
+
+
+.call-to-action {
+    background: url(../assets/cta-bg.jpg);
+    background-size: cover;
+}
+.call-to-action p{
+    line-height: 1.8;
+    color: rgb(194, 189, 189);
+    padding: 20px 0;
+}
+
+
+/* Classes Section */
+
+.classes {
+    padding: 40px 0;
+}
+.sidebar {
+    width: 60%;
+}
+.sidebar li{
+    padding: 18px 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.482);
+}
+.sidebar li a{
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+    margin: 0 10px;
+}
+.sidebar img{
+    width: 20px;
+    vertical-align: middle;
+}
+.class-btn a{
+    color: var(--primary-color);
+}
+.first-class img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.first-class{
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+.first-class h3{
+    font-size: 15px;
+    padding: 10px 0;
+}
+.first-class p{
+    padding-bottom: 10px;
+}
+
+
+
+/* Schedule Section */
+
+
+.schedule {
+    background: url(../assets/schedule-bg.jpg), no-repeat;
+    background-size: 100%;
+}
+table {
+    border: 1px solid white;
+    margin: 0 auto;
+}
+td {
+    border: 1px solid white;
+    font-size: 10px;
+    color: var(--primary-color);
+    padding: 25px 30px;
+}
+.days {
+    text-align: center;
+    padding: 30px 0;
+}
+.days a span{
+    font-size: 10px;
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+.days a{
+    color: var(--primary-color);
+}
+
+
+
+/* Trainers Section */
+
+
+.trainer img{
+    width: 100%;
+}
+.trainer {
+    flex: 0 1 32%;
+    width: 100%;
+    padding: 20px 40px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.482);
+}
+.trainer a{
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+.trainer i{
+    padding: 10px 5px;
+    color: black;
+    font-size: 12px;
+}
+
+
+/* Contact Section  */
+
+
+.contact {
+    position: relative;
+}
+.contact img {
+    width: 700px;
+    height: 400px;
+}
+form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding: 20px;
+    position: absolute;
+    top: 14%;
+    right: 7%;
+    border-radius: 5px;
+}
+.inp input{
+    width: 48%;
+}
+form input {
+    margin: 10px 0;
+    padding: 6px 10px;
+    border: none;
+    border: 1px solid rgba(99, 95, 95, 0.664);
+}
+form .member-btn {
+    margin: 10px 0;
+}
+.subject {
+    width: 100%;
+}
+input::placeholder, textarea::placeholder {
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(131, 125, 125, 0.841);
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+
+
+/* Footer */
+
+
+footer {
+    padding: 20px 0;
+}
+small {
+    font-size: 10px;
+    color: black;
+    font-weight: 600;
+}
+small span {
+    color: var(--secondary-color);
+}
